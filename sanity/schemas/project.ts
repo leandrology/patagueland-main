@@ -19,16 +19,18 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
+      description: 'Just generate this once title is provided',
     }),
     defineField({
       name: 'subtitle',
-      title: 'Subtitle',
+      title: 'Description',
       type: 'string',
       // of: [
       //   {
       //     type: 'block',
       //   },
       // ],
+      description: 'Give a description on your project',
     }),
     defineField({
       name: 'image',
@@ -37,6 +39,7 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      description: 'Choose an image of your project',
     }),
     // defineField({
     //   name: 'content',
